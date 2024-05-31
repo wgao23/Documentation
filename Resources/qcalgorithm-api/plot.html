@@ -6,6 +6,214 @@
         <h3>Plot()<span class="method-order">1/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
+   &emsp;<code>String</code>    series,
+   &emsp;<code>PyObject</code>  pyObject
+   )
+        </pre>
+    </div>
+
+    <div class="method-description">
+        <p>Plot a chart using string series name, with value.</p>
+    </div>
+
+    <div class="details-btn">
+        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-series,-PyObject-pyObject)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
+    </div>
+
+    <div class="method-details" id="Plot(String-series,-PyObject-pyObject)-details" style="display: none;" >
+ 
+        <div class="parameter-list">
+            <table class="parameter-table">
+                <th><strong>Parameters</strong></th>                
+                <tr><td><code>String</code></td>
+                <td>series</td>
+                <td>Name of the plot series.</td></tr>                
+                <tr><td><code>PyObject</code></td>
+                <td>pyObject</td>
+                <td>PyObject with the value to plot.</td></tr>
+            </table>
+        </div>
+
+        <div class="method-return">
+            <h4>Return</h4>
+            <p><code>Void</code> - This method provides no return.</p>
+        </div>
+
+        <div class="method-def">
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L722">line 722 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
+        </div>        
+    </div>
+
+    <div class="method-header">
+        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
+        <h3>Plot()<span class="method-order">2/23</span></h3>
+        <pre>
+            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
+   &emsp;<code>String</code>      chart,
+   &emsp;<code>Indicator</code>   first,
+   &emsp;<code>*Indicator</code>  second,
+   &emsp;<code>*Indicator</code>  third,
+   &emsp;<code>*Indicator</code>  fourth
+   )
+        </pre>
+    </div>
+
+    <div class="method-description">
+        <p>Plots the value of each indicator on the chart.</p>
+    </div>
+
+    <div class="details-btn">
+        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-chart,-Indicator-first,-*Indicator-second,-*Indicator-third,-*Indicator-fourth)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
+    </div>
+
+    <div class="method-details" id="Plot(String-chart,-Indicator-first,-*Indicator-second,-*Indicator-third,-*Indicator-fourth)-details" style="display: none;" >
+ 
+        <div class="parameter-list">
+            <table class="parameter-table">
+                <th><strong>Parameters</strong></th>                
+                <tr><td><code>String</code></td>
+                <td>chart</td>
+                <td>The chart's name.</td></tr>                
+                <tr><td><code>Indicator</code></td>
+                <td>first</td>
+                <td>The first indicator to plot.</td></tr>                
+                <tr><td><code>*Indicator</code></td>
+                <td>second</td>
+                <td><span class='qualifier'>(Optional)</span> The second indicator to plot.</td></tr>                
+                <tr><td><code>*Indicator</code></td>
+                <td>third</td>
+                <td><span class='qualifier'>(Optional)</span> The third indicator to plot.</td></tr>                
+                <tr><td><code>*Indicator</code></td>
+                <td>fourth</td>
+                <td><span class='qualifier'>(Optional)</span> The fourth indicator to plot.</td></tr>
+            </table>
+        </div>
+
+        <div class="method-return">
+            <h4>Return</h4>
+            <p><code>Void</code> - This method provides no return.</p>
+        </div>
+
+        <div class="method-def">
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L756">line 756 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
+        </div>        
+    </div>
+
+    <div class="method-header">
+        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
+        <h3>Plot()<span class="method-order">3/23</span></h3>
+        <pre>
+            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
+   &emsp;<code>String</code>         chart,
+   &emsp;<code>BarIndicator</code>   first,
+   &emsp;<code>*BarIndicator</code>  second,
+   &emsp;<code>*BarIndicator</code>  third,
+   &emsp;<code>*BarIndicator</code>  fourth
+   )
+        </pre>
+    </div>
+
+    <div class="method-description">
+        <p>Plots the value of each indicator on the chart.</p>
+    </div>
+
+    <div class="details-btn">
+        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-chart,-BarIndicator-first,-*BarIndicator-second,-*BarIndicator-third,-*BarIndicator-fourth)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
+    </div>
+
+    <div class="method-details" id="Plot(String-chart,-BarIndicator-first,-*BarIndicator-second,-*BarIndicator-third,-*BarIndicator-fourth)-details" style="display: none;" >
+ 
+        <div class="parameter-list">
+            <table class="parameter-table">
+                <th><strong>Parameters</strong></th>                
+                <tr><td><code>String</code></td>
+                <td>chart</td>
+                <td>The chart's name.</td></tr>                
+                <tr><td><code>BarIndicator</code></td>
+                <td>first</td>
+                <td>The first indicator to plot.</td></tr>                
+                <tr><td><code>*BarIndicator</code></td>
+                <td>second</td>
+                <td><span class='qualifier'>(Optional)</span> The second indicator to plot.</td></tr>                
+                <tr><td><code>*BarIndicator</code></td>
+                <td>third</td>
+                <td><span class='qualifier'>(Optional)</span> The third indicator to plot.</td></tr>                
+                <tr><td><code>*BarIndicator</code></td>
+                <td>fourth</td>
+                <td><span class='qualifier'>(Optional)</span> The fourth indicator to plot.</td></tr>
+            </table>
+        </div>
+
+        <div class="method-return">
+            <h4>Return</h4>
+            <p><code>Void</code> - This method provides no return.</p>
+        </div>
+
+        <div class="method-def">
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L771">line 771 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
+        </div>        
+    </div>
+
+    <div class="method-header">
+        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
+        <h3>Plot()<span class="method-order">4/23</span></h3>
+        <pre>
+            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
+   &emsp;<code>String</code>              chart,
+   &emsp;<code>TradeBarIndicator</code>   first,
+   &emsp;<code>*TradeBarIndicator</code>  second,
+   &emsp;<code>*TradeBarIndicator</code>  third,
+   &emsp;<code>*TradeBarIndicator</code>  fourth
+   )
+        </pre>
+    </div>
+
+    <div class="method-description">
+        <p>Plots the value of each indicator on the chart.</p>
+    </div>
+
+    <div class="details-btn">
+        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-chart,-TradeBarIndicator-first,-*TradeBarIndicator-second,-*TradeBarIndicator-third,-*TradeBarIndicator-fourth)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
+    </div>
+
+    <div class="method-details" id="Plot(String-chart,-TradeBarIndicator-first,-*TradeBarIndicator-second,-*TradeBarIndicator-third,-*TradeBarIndicator-fourth)-details" style="display: none;" >
+ 
+        <div class="parameter-list">
+            <table class="parameter-table">
+                <th><strong>Parameters</strong></th>                
+                <tr><td><code>String</code></td>
+                <td>chart</td>
+                <td>The chart's name.</td></tr>                
+                <tr><td><code>TradeBarIndicator</code></td>
+                <td>first</td>
+                <td>The first indicator to plot.</td></tr>                
+                <tr><td><code>*TradeBarIndicator</code></td>
+                <td>second</td>
+                <td><span class='qualifier'>(Optional)</span> The second indicator to plot.</td></tr>                
+                <tr><td><code>*TradeBarIndicator</code></td>
+                <td>third</td>
+                <td><span class='qualifier'>(Optional)</span> The third indicator to plot.</td></tr>                
+                <tr><td><code>*TradeBarIndicator</code></td>
+                <td>fourth</td>
+                <td><span class='qualifier'>(Optional)</span> The fourth indicator to plot.</td></tr>
+            </table>
+        </div>
+
+        <div class="method-return">
+            <h4>Return</h4>
+            <p><code>Void</code> - This method provides no return.</p>
+        </div>
+
+        <div class="method-def">
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L786">line 786 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
+        </div>        
+    </div>
+
+    <div class="method-header">
+        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
+        <h3>Plot()<span class="method-order">5/23</span></h3>
+        <pre>
+            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>   series,
    &emsp;<code>Decimal</code>  value
    )
@@ -40,13 +248,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L66">line 66 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L67">line 67 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">2/23</span></h3>
+        <h3>Plot()<span class="method-order">6/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  series,
@@ -83,13 +291,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L111">line 111 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L112">line 112 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">3/23</span></h3>
+        <h3>Plot()<span class="method-order">7/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  series,
@@ -126,13 +334,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L120">line 120 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L121">line 121 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">4/23</span></h3>
+        <h3>Plot()<span class="method-order">8/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  series,
@@ -169,13 +377,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L130">line 130 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L131">line 131 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">5/23</span></h3>
+        <h3>Plot()<span class="method-order">9/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  chart,
@@ -216,13 +424,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L140">line 140 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L141">line 141 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">6/23</span></h3>
+        <h3>Plot()<span class="method-order">10/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  chart,
@@ -263,13 +471,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L150">line 150 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L151">line 151 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">7/23</span></h3>
+        <h3>Plot()<span class="method-order">11/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  chart,
@@ -310,13 +518,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L160">line 160 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L161">line 161 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">8/23</span></h3>
+        <h3>Plot()<span class="method-order">12/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>   chart,
@@ -357,13 +565,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L172">line 172 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L173">line 173 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">9/23</span></h3>
+        <h3>Plot()<span class="method-order">13/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  series,
@@ -412,13 +620,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L190">line 190 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L191">line 191 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">10/23</span></h3>
+        <h3>Plot()<span class="method-order">14/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  series,
@@ -467,13 +675,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L205">line 205 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L206">line 206 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">11/23</span></h3>
+        <h3>Plot()<span class="method-order">15/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  series,
@@ -522,13 +730,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L220">line 220 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L221">line 221 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">12/23</span></h3>
+        <h3>Plot()<span class="method-order">16/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>   series,
@@ -577,13 +785,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L235">line 235 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L236">line 236 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">13/23</span></h3>
+        <h3>Plot()<span class="method-order">17/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  chart,
@@ -636,13 +844,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L252">line 252 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L253">line 253 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">14/23</span></h3>
+        <h3>Plot()<span class="method-order">18/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  chart,
@@ -695,13 +903,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L268">line 268 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L269">line 269 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">15/23</span></h3>
+        <h3>Plot()<span class="method-order">19/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>  chart,
@@ -754,13 +962,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L284">line 284 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L285">line 285 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">16/23</span></h3>
+        <h3>Plot()<span class="method-order">20/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>   chart,
@@ -813,13 +1021,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L299">line 299 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L300">line 300 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">17/23</span></h3>
+        <h3>Plot()<span class="method-order">21/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>    series,
@@ -856,13 +1064,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L314">line 314 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L315">line 315 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">18/23</span></h3>
+        <h3>Plot()<span class="method-order">22/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>    chart,
@@ -903,13 +1111,13 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L327">line 327 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L328">line 328 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 
     <div class="method-header">
         <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">19/23</span></h3>
+        <h3>Plot()<span class="method-order">23/23</span></h3>
         <pre>
             <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
    &emsp;<code>String</code>             chart,
@@ -946,215 +1154,7 @@
         </div>
 
         <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L404">line 404 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
-        </div>        
-    </div>
-
-    <div class="method-header">
-        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">20/23</span></h3>
-        <pre>
-            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
-   &emsp;<code>String</code>    series,
-   &emsp;<code>PyObject</code>  pyObject
-   )
-        </pre>
-    </div>
-
-    <div class="method-description">
-        <p>Plot a chart using string series name, with value.</p>
-    </div>
-
-    <div class="details-btn">
-        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-series,-PyObject-pyObject)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
-    </div>
-
-    <div class="method-details" id="Plot(String-series,-PyObject-pyObject)-details" style="display: none;" >
- 
-        <div class="parameter-list">
-            <table class="parameter-table">
-                <th><strong>Parameters</strong></th>                
-                <tr><td><code>String</code></td>
-                <td>series</td>
-                <td>Name of the plot series.</td></tr>                
-                <tr><td><code>PyObject</code></td>
-                <td>pyObject</td>
-                <td>PyObject with the value to plot.</td></tr>
-            </table>
-        </div>
-
-        <div class="method-return">
-            <h4>Return</h4>
-            <p><code>Void</code> - This method provides no return.</p>
-        </div>
-
-        <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L686">line 686 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
-        </div>        
-    </div>
-
-    <div class="method-header">
-        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">21/23</span></h3>
-        <pre>
-            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
-   &emsp;<code>String</code>      chart,
-   &emsp;<code>Indicator</code>   first,
-   &emsp;<code>*Indicator</code>  second,
-   &emsp;<code>*Indicator</code>  third,
-   &emsp;<code>*Indicator</code>  fourth
-   )
-        </pre>
-    </div>
-
-    <div class="method-description">
-        <p>Plots the value of each indicator on the chart.</p>
-    </div>
-
-    <div class="details-btn">
-        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-chart,-Indicator-first,-*Indicator-second,-*Indicator-third,-*Indicator-fourth)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
-    </div>
-
-    <div class="method-details" id="Plot(String-chart,-Indicator-first,-*Indicator-second,-*Indicator-third,-*Indicator-fourth)-details" style="display: none;" >
- 
-        <div class="parameter-list">
-            <table class="parameter-table">
-                <th><strong>Parameters</strong></th>                
-                <tr><td><code>String</code></td>
-                <td>chart</td>
-                <td>The chart's name.</td></tr>                
-                <tr><td><code>Indicator</code></td>
-                <td>first</td>
-                <td>The first indicator to plot.</td></tr>                
-                <tr><td><code>*Indicator</code></td>
-                <td>second</td>
-                <td><span class='qualifier'>(Optional)</span> The second indicator to plot.</td></tr>                
-                <tr><td><code>*Indicator</code></td>
-                <td>third</td>
-                <td><span class='qualifier'>(Optional)</span> The third indicator to plot.</td></tr>                
-                <tr><td><code>*Indicator</code></td>
-                <td>fourth</td>
-                <td><span class='qualifier'>(Optional)</span> The fourth indicator to plot.</td></tr>
-            </table>
-        </div>
-
-        <div class="method-return">
-            <h4>Return</h4>
-            <p><code>Void</code> - This method provides no return.</p>
-        </div>
-
-        <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L720">line 720 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
-        </div>        
-    </div>
-
-    <div class="method-header">
-        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">22/23</span></h3>
-        <pre>
-            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
-   &emsp;<code>String</code>         chart,
-   &emsp;<code>BarIndicator</code>   first,
-   &emsp;<code>*BarIndicator</code>  second,
-   &emsp;<code>*BarIndicator</code>  third,
-   &emsp;<code>*BarIndicator</code>  fourth
-   )
-        </pre>
-    </div>
-
-    <div class="method-description">
-        <p>Plots the value of each indicator on the chart.</p>
-    </div>
-
-    <div class="details-btn">
-        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-chart,-BarIndicator-first,-*BarIndicator-second,-*BarIndicator-third,-*BarIndicator-fourth)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
-    </div>
-
-    <div class="method-details" id="Plot(String-chart,-BarIndicator-first,-*BarIndicator-second,-*BarIndicator-third,-*BarIndicator-fourth)-details" style="display: none;" >
- 
-        <div class="parameter-list">
-            <table class="parameter-table">
-                <th><strong>Parameters</strong></th>                
-                <tr><td><code>String</code></td>
-                <td>chart</td>
-                <td>The chart's name.</td></tr>                
-                <tr><td><code>BarIndicator</code></td>
-                <td>first</td>
-                <td>The first indicator to plot.</td></tr>                
-                <tr><td><code>*BarIndicator</code></td>
-                <td>second</td>
-                <td><span class='qualifier'>(Optional)</span> The second indicator to plot.</td></tr>                
-                <tr><td><code>*BarIndicator</code></td>
-                <td>third</td>
-                <td><span class='qualifier'>(Optional)</span> The third indicator to plot.</td></tr>                
-                <tr><td><code>*BarIndicator</code></td>
-                <td>fourth</td>
-                <td><span class='qualifier'>(Optional)</span> The fourth indicator to plot.</td></tr>
-            </table>
-        </div>
-
-        <div class="method-return">
-            <h4>Return</h4>
-            <p><code>Void</code> - This method provides no return.</p>
-        </div>
-
-        <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L735">line 735 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
-        </div>        
-    </div>
-
-    <div class="method-header">
-        <button class="method-tag" onclick="openTopTab(event, 'Charting')">Charting</button>
-        <h3>Plot()<span class="method-order">23/23</span></h3>
-        <pre>
-            <font color="#8F9CA3">Void</font> QuantConnect.Algorithm.QCAlgorithm.Plot (
-   &emsp;<code>String</code>              chart,
-   &emsp;<code>TradeBarIndicator</code>   first,
-   &emsp;<code>*TradeBarIndicator</code>  second,
-   &emsp;<code>*TradeBarIndicator</code>  third,
-   &emsp;<code>*TradeBarIndicator</code>  fourth
-   )
-        </pre>
-    </div>
-
-    <div class="method-description">
-        <p>Plots the value of each indicator on the chart.</p>
-    </div>
-
-    <div class="details-btn">
-        <button class="show-hide-detail" onclick="ShowHide(event, 'Plot(String-chart,-TradeBarIndicator-first,-*TradeBarIndicator-second,-*TradeBarIndicator-third,-*TradeBarIndicator-fourth)-details')"><span>Show Details <img src='https://cdn.quantconnect.com/i/tu/api-chevron-show.svg' alt='arrow-show'></span></button>
-    </div>
-
-    <div class="method-details" id="Plot(String-chart,-TradeBarIndicator-first,-*TradeBarIndicator-second,-*TradeBarIndicator-third,-*TradeBarIndicator-fourth)-details" style="display: none;" >
- 
-        <div class="parameter-list">
-            <table class="parameter-table">
-                <th><strong>Parameters</strong></th>                
-                <tr><td><code>String</code></td>
-                <td>chart</td>
-                <td>The chart's name.</td></tr>                
-                <tr><td><code>TradeBarIndicator</code></td>
-                <td>first</td>
-                <td>The first indicator to plot.</td></tr>                
-                <tr><td><code>*TradeBarIndicator</code></td>
-                <td>second</td>
-                <td><span class='qualifier'>(Optional)</span> The second indicator to plot.</td></tr>                
-                <tr><td><code>*TradeBarIndicator</code></td>
-                <td>third</td>
-                <td><span class='qualifier'>(Optional)</span> The third indicator to plot.</td></tr>                
-                <tr><td><code>*TradeBarIndicator</code></td>
-                <td>fourth</td>
-                <td><span class='qualifier'>(Optional)</span> The fourth indicator to plot.</td></tr>
-            </table>
-        </div>
-
-        <div class="method-return">
-            <h4>Return</h4>
-            <p><code>Void</code> - This method provides no return.</p>
-        </div>
-
-        <div class="method-def">
-            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L750">line 750 of file Algorithm/QCAlgorithm.Python.cs.</a></p>
+            <p>Definition at <a rel="nofollow" target="_blank" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Plotting.cs#L405">line 405 of file Algorithm/QCAlgorithm.Plotting.cs.</a></p>
         </div>        
     </div>
 </div>
