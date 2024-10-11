@@ -52,3 +52,6 @@ var strikes = contracts.Select(x =&gt; x.ID.StrikePrice).Distinct().ToList();</p
 </div>
 
 <p>To get historical data for a single US Index Option contract, call the <b class="csharp">History</b><b class="python">history</b> method like you would in an algorithm but on the <b>QuantBook</b> object. For more information about historical data in the Research Environment, see <a href="/docs/v2/research-environment/datasets/index-options">Index Options</a>.</p>
+
+<h4>Historical Greeks and IV Data</h4>
+<p>To get historical data for the Greeks and implied volatility of Index Options, see the <a href='/datasets/quantconnect-us-index-option-universe'>US Index Option Universe</a> dataset.</p>
