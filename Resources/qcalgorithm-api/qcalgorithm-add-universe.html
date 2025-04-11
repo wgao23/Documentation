@@ -1,5 +1,5 @@
 <div class="python">
-<div class="code-snippet"><code>add_universe(<span class="object-type">t, security_type, name, resolution, market, universe_settings, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L502">[source]</a></div>
+<div class="code-snippet"><code>add_universe(<span class="object-type">t, security_type, name, resolution, market, universe_settings, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L507">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -14,7 +14,7 @@
     <span class="arg-name">name</span> (<span class="object-type">str</span>) &mdash; A unique name for this universe
     </li>
     <li>
-    <span class="arg-name">resolution</span> (<span class="object-type">Optional[Resolution] | <a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a></span>) &mdash; The expected resolution of the universe data
+    <span class="arg-name">resolution</span> (<span class="object-type"><a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a> | Optional[Resolution]</span>) &mdash; The expected resolution of the universe data
     </li>
     <li>
     <span class="arg-name">market</span> (<span class="object-type">str</span>) &mdash; The market for selected symbols
@@ -23,7 +23,7 @@
     <span class="arg-name">universe_settings</span> (<span class="object-type"><a href="/docs/v2/writing-algorithms/api-reference#UniverseSettings">UniverseSettings</a></span>) &mdash; The subscription settings to use for newly created subscriptions
     </li>
     <li>
-    <span class="arg-name">selector</span> (<span class="object-type">List[datetime, str] | List[BaseData, Symbol] | List[Fundamental, Symbol] | PyObject | List[BaseData, str]</span>) &mdash; Function delegate that performs selection on the universe data
+    <span class="arg-name">selector</span> (<span class="object-type">PyObject | List[Fundamental, Symbol] | List[BaseData, str] | List[BaseData, Symbol] | List[datetime, str]</span>) &mdash; Function delegate that performs selection on the universe data
     </li>
 </ul>
 
@@ -32,7 +32,7 @@
 </div>
 </div>
 <div class="python">
-<div class="code-snippet"><code>add_universe(<span class="object-type">data_type, security_type, name, resolution, market, universe_settings, py_selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L518">[source]</a></div>
+<div class="code-snippet"><code>add_universe(<span class="object-type">data_type, security_type, name, resolution, market, universe_settings, py_selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L523">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -47,7 +47,7 @@
     <span class="arg-name">name</span> (<span class="object-type">str</span>) &mdash; A unique name for this universe
     </li>
     <li>
-    <span class="arg-name">resolution</span> (<span class="object-type">Optional[Resolution] | <a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a></span>) &mdash; The expected resolution of the universe data
+    <span class="arg-name">resolution</span> (<span class="object-type"><a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a> | Optional[Resolution]</span>) &mdash; The expected resolution of the universe data
     </li>
     <li>
     <span class="arg-name">market</span> (<span class="object-type">str</span>) &mdash; The market for selected symbols
@@ -65,16 +65,16 @@
 </div>
 </div>
 <div class="python">
-<div class="code-snippet"><code>add_universe(<span class="object-type">date_rule, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L441">[source]</a></div>
+<div class="code-snippet"><code>add_universe(<span class="object-type">py_object, pyfine</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L330">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
 <ul class="subsection-content">
     <li>
-    <span class="arg-name">date_rule</span> (<span class="object-type">IDateRule</span>)
+    <span class="arg-name">py_object</span> (<span class="object-type">PyObject</span>) &mdash; Defines an initial coarse selection or a universe
     </li>
     <li>
-    <span class="arg-name">selector</span> (<span class="object-type">List[BaseData, Symbol] | List[BaseData, str] | List[Fundamental, Symbol]</span>) &mdash; Defines an initial coarse selection
+    <span class="arg-name">pyfine</span> (<span class="object-type">PyObject</span>) &mdash; Defines a more detailed selection with access to more data
     </li>
 </ul>
 
@@ -83,7 +83,25 @@
 </div>
 </div>
 <div class="python">
-<div class="code-snippet"><code>add_universe(<span class="object-type">coarse_selector, fine_selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L455">[source]</a></div>
+<div class="code-snippet"><code>add_universe(<span class="object-type">date_rule, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L449">[source]</a></div>
+<div class="subsection-content">
+<p>Adds a new universe selection model</p>
+<div class="subsection-header">Parameters:</div>
+<ul class="subsection-content">
+    <li>
+    <span class="arg-name">date_rule</span> (<span class="object-type">IDateRule</span>)
+    </li>
+    <li>
+    <span class="arg-name">selector</span> (<span class="object-type">List[BaseData, Symbol] | List[Fundamental, Symbol] | List[BaseData, str]</span>) &mdash; Defines an initial coarse selection
+    </li>
+</ul>
+
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content"><a href="/docs/v2/writing-algorithms/api-reference#Universe">Universe</a></p>
+</div>
+</div>
+<div class="python">
+<div class="code-snippet"><code>add_universe(<span class="object-type">coarse_selector, fine_selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L463">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -101,7 +119,7 @@
 </div>
 </div>
 <div class="python">
-<div class="code-snippet"><code>add_universe(<span class="object-type">universe, fine_selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L469">[source]</a></div>
+<div class="code-snippet"><code>add_universe(<span class="object-type">universe, fine_selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L477">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -118,26 +136,8 @@
 <p class="subsection-content"><a href="/docs/v2/writing-algorithms/api-reference#Universe">Universe</a></p>
 </div>
 </div>
-<div class="python">
-<div class="code-snippet"><code>add_universe(<span class="object-type">py_object, pyfine</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L325">[source]</a></div>
-<div class="subsection-content">
-<p>Adds a new universe selection model</p>
-<div class="subsection-header">Parameters:</div>
-<ul class="subsection-content">
-    <li>
-    <span class="arg-name">py_object</span> (<span class="object-type">PyObject</span>) &mdash; Defines an initial coarse selection or a universe
-    </li>
-    <li>
-    <span class="arg-name">pyfine</span> (<span class="object-type">PyObject</span>) &mdash; Defines a more detailed selection with access to more data
-    </li>
-</ul>
-
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content"><a href="/docs/v2/writing-algorithms/api-reference#Universe">Universe</a></p>
-</div>
-</div>
 <div class="csharp">
-<div class="code-snippet"><code>AddUniverse(<span class="object-type">T, securityType, name, resolution, market, universeSettings, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L502">[source]</a></div>
+<div class="code-snippet"><code>AddUniverse(<span class="object-type">T, securityType, name, resolution, market, universeSettings, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L507">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -152,7 +152,7 @@
     <span class="arg-name">name</span> (<span class="object-type">String</span>) &mdash; A unique name for this universe
     </li>
     <li>
-    <span class="arg-name">resolution</span> (<span class="object-type">Nullable[Resolution] | <a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a></span>) &mdash; The expected resolution of the universe data
+    <span class="arg-name">resolution</span> (<span class="object-type"><a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a> | Nullable[Resolution]</span>) &mdash; The expected resolution of the universe data
     </li>
     <li>
     <span class="arg-name">market</span> (<span class="object-type">String</span>) &mdash; The market for selected symbols
@@ -161,7 +161,7 @@
     <span class="arg-name">universeSettings</span> (<span class="object-type"><a href="/docs/v2/writing-algorithms/api-reference#UniverseSettings">UniverseSettings</a></span>) &mdash; The subscription settings to use for newly created subscriptions
     </li>
     <li>
-    <span class="arg-name">selector</span> (<span class="object-type">IEnumerable[DateTime, String] | IEnumerable[BaseData, String] | PyObject | IEnumerable[BaseData, Symbol] | IEnumerable[Fundamental, Symbol]</span>) &mdash; Function delegate that performs selection on the universe data
+    <span class="arg-name">selector</span> (<span class="object-type">PyObject | IEnumerable[Fundamental, Symbol] | IEnumerable[DateTime, String] | IEnumerable[BaseData, String] | IEnumerable[BaseData, Symbol]</span>) &mdash; Function delegate that performs selection on the universe data
     </li>
 </ul>
 
@@ -170,7 +170,7 @@
 </div>
 </div>
 <div class="csharp">
-<div class="code-snippet"><code>AddUniverse(<span class="object-type">dataType, securityType, name, resolution, market, universeSettings, pySelector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L518">[source]</a></div>
+<div class="code-snippet"><code>AddUniverse(<span class="object-type">dataType, securityType, name, resolution, market, universeSettings, pySelector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L523">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -185,7 +185,7 @@
     <span class="arg-name">name</span> (<span class="object-type">String</span>) &mdash; A unique name for this universe
     </li>
     <li>
-    <span class="arg-name">resolution</span> (<span class="object-type">Nullable[Resolution] | <a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a></span>) &mdash; The expected resolution of the universe data
+    <span class="arg-name">resolution</span> (<span class="object-type"><a href="/docs/v2/writing-algorithms/api-reference#Resolution">Resolution</a> | Nullable[Resolution]</span>) &mdash; The expected resolution of the universe data
     </li>
     <li>
     <span class="arg-name">market</span> (<span class="object-type">String</span>) &mdash; The market for selected symbols
@@ -203,16 +203,16 @@
 </div>
 </div>
 <div class="csharp">
-<div class="code-snippet"><code>AddUniverse(<span class="object-type">dateRule, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L441">[source]</a></div>
+<div class="code-snippet"><code>AddUniverse(<span class="object-type">pyObject, pyfine</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L330">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
 <ul class="subsection-content">
     <li>
-    <span class="arg-name">dateRule</span> (<span class="object-type">IDateRule</span>)
+    <span class="arg-name">pyObject</span> (<span class="object-type">PyObject</span>) &mdash; Defines an initial coarse selection or a universe
     </li>
     <li>
-    <span class="arg-name">selector</span> (<span class="object-type">IEnumerable[BaseData, Symbol] | IEnumerable[BaseData, String] | IEnumerable[Fundamental, Symbol]</span>) &mdash; Defines an initial coarse selection
+    <span class="arg-name">pyfine</span> (<span class="object-type">PyObject</span>) &mdash; Defines a more detailed selection with access to more data
     </li>
 </ul>
 
@@ -221,7 +221,25 @@
 </div>
 </div>
 <div class="csharp">
-<div class="code-snippet"><code>AddUniverse(<span class="object-type">coarseSelector, fineSelector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L455">[source]</a></div>
+<div class="code-snippet"><code>AddUniverse(<span class="object-type">dateRule, selector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L449">[source]</a></div>
+<div class="subsection-content">
+<p>Adds a new universe selection model</p>
+<div class="subsection-header">Parameters:</div>
+<ul class="subsection-content">
+    <li>
+    <span class="arg-name">dateRule</span> (<span class="object-type">IDateRule</span>)
+    </li>
+    <li>
+    <span class="arg-name">selector</span> (<span class="object-type">IEnumerable[BaseData, String] | IEnumerable[Fundamental, Symbol] | IEnumerable[BaseData, Symbol]</span>) &mdash; Defines an initial coarse selection
+    </li>
+</ul>
+
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content"><a href="/docs/v2/writing-algorithms/api-reference#Universe">Universe</a></p>
+</div>
+</div>
+<div class="csharp">
+<div class="code-snippet"><code>AddUniverse(<span class="object-type">coarseSelector, fineSelector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L463">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -239,7 +257,7 @@
 </div>
 </div>
 <div class="csharp">
-<div class="code-snippet"><code>AddUniverse(<span class="object-type">universe, fineSelector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L469">[source]</a></div>
+<div class="code-snippet"><code>AddUniverse(<span class="object-type">universe, fineSelector</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Universe.cs#L477">[source]</a></div>
 <div class="subsection-content">
 <p>Adds a new universe selection model</p>
 <div class="subsection-header">Parameters:</div>
@@ -249,24 +267,6 @@
     </li>
     <li>
     <span class="arg-name">fineSelector</span> (<span class="object-type">Func&lt;IEnumerable&lt;Fundamental&gt;, IEnumerable&lt;Symbol&gt;&gt;</span>) &mdash; Defines a more detailed selection with access to more data
-    </li>
-</ul>
-
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content"><a href="/docs/v2/writing-algorithms/api-reference#Universe">Universe</a></p>
-</div>
-</div>
-<div class="csharp">
-<div class="code-snippet"><code>AddUniverse(<span class="object-type">pyObject, pyfine</span>)</code><a class="code-source" href="https://github.com/QuantConnect/Lean/blob/master/Algorithm/QCAlgorithm.Python.cs#L325">[source]</a></div>
-<div class="subsection-content">
-<p>Adds a new universe selection model</p>
-<div class="subsection-header">Parameters:</div>
-<ul class="subsection-content">
-    <li>
-    <span class="arg-name">pyObject</span> (<span class="object-type">PyObject</span>) &mdash; Defines an initial coarse selection or a universe
-    </li>
-    <li>
-    <span class="arg-name">pyfine</span> (<span class="object-type">PyObject</span>) &mdash; Defines a more detailed selection with access to more data
     </li>
 </ul>
 

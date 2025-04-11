@@ -123,6 +123,21 @@
 
 </div>
 
+<div class="code-snippet"><code>set(<span class="object-type">key, value</span>)</code></div>
+<div class="subsection-content">
+<p>Sets the LocalTimeKeeper to be used for this <a href="#Security">Security</a>. This is the source of this instance's time.</p>
+<div class="subsection-header">Parameters:</div>
+<ul class="subsection-content">
+    <li>
+    <span class="arg-name">key</span> (<span class="object-type">str</span>)
+    </li>
+    <li>
+    <span class="arg-name">value</span> (<span class="object-type">object</span>)
+    </li>
+</ul>
+
+</div>
+
 <div class="code-snippet"><code>set_buying_power_model(<span class="object-type">buying_power_model</span>)</code></div>
 <div class="subsection-content">
 <p>Sets the buying power model</p>
@@ -304,17 +319,6 @@
 
 </div>
 
-<div class="code-snippet"><code>set_margin_model(<span class="object-type">py_object</span>)</code></div>
-<div class="subsection-content">
-<p>Sets the margin model</p>
-<div class="subsection-header">Parameters:</div>
-<ul class="subsection-content">
-    <li>
-    <span class="arg-name">py_object</span> (<span class="object-type">PyObject</span>)
-    </li>
-</ul>
-
-</div>
 <div class="code-snippet"><code>set_margin_model(<span class="object-type">margin_model</span>)</code></div>
 <div class="subsection-content">
 <p>Sets the margin model</p>
@@ -322,6 +326,17 @@
 <ul class="subsection-content">
     <li>
     <span class="arg-name">margin_model</span> (<span class="object-type">IBuyingPowerModel</span>)
+    </li>
+</ul>
+
+</div>
+<div class="code-snippet"><code>set_margin_model(<span class="object-type">py_object</span>)</code></div>
+<div class="subsection-content">
+<p>Sets the margin model</p>
+<div class="subsection-header">Parameters:</div>
+<ul class="subsection-content">
+    <li>
+    <span class="arg-name">py_object</span> (<span class="object-type">PyObject</span>)
     </li>
 </ul>
 
@@ -426,7 +441,7 @@
 <div class="subsection-header">Parameters:</div>
 <ul class="subsection-content">
     <li>
-    <span class="arg-name">slippage_model</span> (<span class="object-type">ISlippageModel | PyObject</span>)
+    <span class="arg-name">slippage_model</span> (<span class="object-type">PyObject | ISlippageModel</span>)
     </li>
 </ul>
 
@@ -541,7 +556,7 @@
 <div class="subsection-header">Returns:</div>
 <p class="subsection-content">Gets or sets the contract filter</p>
 <div class="subsection-header">Return type:</div>
-<p class="subsection-content">IDerivativeSecurityFilter</p>
+<p class="subsection-content">IDerivativeSecurityFilter[OptionUniverse]</p>
 </div>
 
 <div class="code-snippet"><span class="object-type">property</span> <code>contract_multiplier</code></div>
@@ -1173,6 +1188,21 @@
 
 </div>
 
+<div class="code-snippet"><code>Set(<span class="object-type">key, value</span>)</code></div>
+<div class="subsection-content">
+<p>Sets the LocalTimeKeeper to be used for this <a href="#Security">Security</a>. This is the source of this instance's time.</p>
+<div class="subsection-header">Parameters:</div>
+<ul class="subsection-content">
+    <li>
+    <span class="arg-name">key</span> (<span class="object-type">string</span>)
+    </li>
+    <li>
+    <span class="arg-name">value</span> (<span class="object-type">object</span>)
+    </li>
+</ul>
+
+</div>
+
 <div class="code-snippet"><code>SetBuyingPowerModel(<span class="object-type">buyingPowerModel</span>)</code></div>
 <div class="subsection-content">
 <p>Sets the buying power model</p>
@@ -1354,17 +1384,6 @@
 
 </div>
 
-<div class="code-snippet"><code>SetMarginModel(<span class="object-type">pyObject</span>)</code></div>
-<div class="subsection-content">
-<p>Sets the margin model</p>
-<div class="subsection-header">Parameters:</div>
-<ul class="subsection-content">
-    <li>
-    <span class="arg-name">pyObject</span> (<span class="object-type">PyObject</span>)
-    </li>
-</ul>
-
-</div>
 <div class="code-snippet"><code>SetMarginModel(<span class="object-type">marginModel</span>)</code></div>
 <div class="subsection-content">
 <p>Sets the margin model</p>
@@ -1372,6 +1391,17 @@
 <ul class="subsection-content">
     <li>
     <span class="arg-name">marginModel</span> (<span class="object-type">IBuyingPowerModel</span>)
+    </li>
+</ul>
+
+</div>
+<div class="code-snippet"><code>SetMarginModel(<span class="object-type">pyObject</span>)</code></div>
+<div class="subsection-content">
+<p>Sets the margin model</p>
+<div class="subsection-header">Parameters:</div>
+<ul class="subsection-content">
+    <li>
+    <span class="arg-name">pyObject</span> (<span class="object-type">PyObject</span>)
     </li>
 </ul>
 
@@ -1476,7 +1506,7 @@
 <div class="subsection-header">Parameters:</div>
 <ul class="subsection-content">
     <li>
-    <span class="arg-name">slippageModel</span> (<span class="object-type">ISlippageModel | PyObject</span>)
+    <span class="arg-name">slippageModel</span> (<span class="object-type">PyObject | ISlippageModel</span>)
     </li>
 </ul>
 
@@ -1591,7 +1621,7 @@
 <div class="subsection-header">Returns:</div>
 <p class="subsection-content">Gets or sets the contract filter</p>
 <div class="subsection-header">Return type:</div>
-<p class="subsection-content">IDerivativeSecurityFilter</p>
+<p class="subsection-content">IDerivativeSecurityFilter&lt;OptionUniverse&gt;</p>
 </div>
 
 <div class="code-snippet"><span class="object-type">property</span> <code>ContractMultiplier</code></div>

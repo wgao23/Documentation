@@ -61,6 +61,16 @@
 
 </div>
 <div class="subsection-content">
+<div class="code-snippet"><span class="object-type">property</span> <code>ar_parameters</code></div>
+<div class="subsection-content">
+<p>Fitted AR parameters (φ terms).</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Fitted AR parameters (φ terms).</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">float[]</p>
+</div>
+
 <div class="code-snippet"><span class="object-type">property</span> <code>ar_residual_error</code></div>
 <div class="subsection-content">
 <p>The variance of the residuals (Var(ε)) from the first step of <a href="#Double[])">Double[])</a>.</p>
@@ -91,6 +101,26 @@
 <p class="subsection-content">IndicatorDataPoint</p>
 </div>
 
+<div class="code-snippet"><span class="object-type">property</span> <code>handle_exceptions</code></div>
+<div class="subsection-content">
+<p>Whether or not to handle potential exceptions, returning a zero value. I.e, the values provided as input are not valid by the Normal Equations direct regression method</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Whether or not to handle potential exceptions, returning a zero value. I.e, the values provided as input are not valid by the Normal Equations direct regression method</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">bool</p>
+</div>
+
+<div class="code-snippet"><span class="object-type">property</span> <code>intercept</code></div>
+<div class="subsection-content">
+<p>Fitted intercept (c term).</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Fitted intercept (c term).</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">float</p>
+</div>
+
 <div class="code-snippet"><span class="object-type">property</span> <code>is_ready</code></div>
 <div class="subsection-content">
 <p>Gets a flag indicating when this indicator is ready and fully initialized</p>
@@ -109,6 +139,16 @@
 <p class="subsection-content">Indexes the history windows, where index 0 is the most recent indicator value. If index is greater or equal than the current count, it returns null. If the index is greater or equal than the window size, it returns null and resizes the windows to i + 1.</p>
 <div class="subsection-header">Return type:</div>
 <p class="subsection-content">IndicatorDataPoint</p>
+</div>
+
+<div class="code-snippet"><span class="object-type">property</span> <code>ma_parameters</code></div>
+<div class="subsection-content">
+<p>Fitted MA parameters (θ terms).</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Fitted MA parameters (θ terms).</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">float[]</p>
 </div>
 
 <div class="code-snippet"><span class="object-type">property</span> <code>ma_residual_error</code></div>
@@ -169,38 +209,6 @@
 <p class="subsection-content">A rolling window keeping a history of the indicator values of a given period</p>
 <div class="subsection-header">Return type:</div>
 <p class="subsection-content">RollingWindow[IndicatorDataPoint]</p>
-</div>
-
-</div>
-<div class="subsection-content">
-<div class="code-snippet"><span class="object-type">field</span> <code>ar_parameters</code></div>
-<div class="subsection-content">
-<p>Fitted AR parameters (φ terms).</p>
-
-<div class="subsection-header">Returns:</div>
-<p class="subsection-content">Fitted AR parameters (φ terms).</p>
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content">float[]</p>
-</div>
-
-<div class="code-snippet"><span class="object-type">field</span> <code>intercept</code></div>
-<div class="subsection-content">
-<p>Fitted intercept (c term).</p>
-
-<div class="subsection-header">Returns:</div>
-<p class="subsection-content">Fitted intercept (c term).</p>
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content">float</p>
-</div>
-
-<div class="code-snippet"><span class="object-type">field</span> <code>ma_parameters</code></div>
-<div class="subsection-content">
-<p>Fitted MA parameters (θ terms).</p>
-
-<div class="subsection-header">Returns:</div>
-<p class="subsection-content">Fitted MA parameters (θ terms).</p>
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content">float[]</p>
 </div>
 
 </div>
@@ -276,6 +284,16 @@
 
 </div>
 <div class="subsection-content">
+<div class="code-snippet"><span class="object-type">property</span> <code>ArParameters</code></div>
+<div class="subsection-content">
+<p>Fitted AR parameters (φ terms).</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Fitted AR parameters (φ terms).</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">Double[]</p>
+</div>
+
 <div class="code-snippet"><span class="object-type">property</span> <code>ArResidualError</code></div>
 <div class="subsection-content">
 <p>The variance of the residuals (Var(ε)) from the first step of <a href="#Double[])">Double[])</a>.</p>
@@ -306,6 +324,26 @@
 <p class="subsection-content">IndicatorDataPoint</p>
 </div>
 
+<div class="code-snippet"><span class="object-type">property</span> <code>HandleExceptions</code></div>
+<div class="subsection-content">
+<p>Whether or not to handle potential exceptions, returning a zero value. I.e, the values provided as input are not valid by the Normal Equations direct regression method</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Whether or not to handle potential exceptions, returning a zero value. I.e, the values provided as input are not valid by the Normal Equations direct regression method</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">bool</p>
+</div>
+
+<div class="code-snippet"><span class="object-type">property</span> <code>Intercept</code></div>
+<div class="subsection-content">
+<p>Fitted intercept (c term).</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Fitted intercept (c term).</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">Double</p>
+</div>
+
 <div class="code-snippet"><span class="object-type">property</span> <code>IsReady</code></div>
 <div class="subsection-content">
 <p>Gets a flag indicating when this indicator is ready and fully initialized</p>
@@ -314,6 +352,16 @@
 <p class="subsection-content">Gets a flag indicating when this indicator is ready and fully initialized</p>
 <div class="subsection-header">Return type:</div>
 <p class="subsection-content">bool</p>
+</div>
+
+<div class="code-snippet"><span class="object-type">property</span> <code>MaParameters</code></div>
+<div class="subsection-content">
+<p>Fitted MA parameters (θ terms).</p>
+
+<div class="subsection-header">Returns:</div>
+<p class="subsection-content">Fitted MA parameters (θ terms).</p>
+<div class="subsection-header">Return type:</div>
+<p class="subsection-content">Double[]</p>
 </div>
 
 <div class="code-snippet"><span class="object-type">property</span> <code>MaResidualError</code></div>
@@ -384,38 +432,6 @@
 <p class="subsection-content">Indexes the history windows, where index 0 is the most recent indicator value. If index is greater or equal than the current count, it returns null. If the index is greater or equal than the window size, it returns null and resizes the windows to i + 1.</p>
 <div class="subsection-header">Return type:</div>
 <p class="subsection-content">IndicatorDataPoint</p>
-</div>
-
-</div>
-<div class="subsection-content">
-<div class="code-snippet"><span class="object-type">field</span> <code>ArParameters</code></div>
-<div class="subsection-content">
-<p>Fitted AR parameters (φ terms).</p>
-
-<div class="subsection-header">Returns:</div>
-<p class="subsection-content">Fitted AR parameters (φ terms).</p>
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content">Double[]</p>
-</div>
-
-<div class="code-snippet"><span class="object-type">field</span> <code>Intercept</code></div>
-<div class="subsection-content">
-<p>Fitted intercept (c term).</p>
-
-<div class="subsection-header">Returns:</div>
-<p class="subsection-content">Fitted intercept (c term).</p>
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content">Double</p>
-</div>
-
-<div class="code-snippet"><span class="object-type">field</span> <code>MaParameters</code></div>
-<div class="subsection-content">
-<p>Fitted MA parameters (θ terms).</p>
-
-<div class="subsection-header">Returns:</div>
-<p class="subsection-content">Fitted MA parameters (θ terms).</p>
-<div class="subsection-header">Return type:</div>
-<p class="subsection-content">Double[]</p>
 </div>
 
 </div>
